@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<title> 제목 </title>
+		<meta charset ="utf-8">
+	</head>
+	<body>
+		<div><? echo "안뇽하세요 '$_SESSION['user_id']'<br/>"     ?>      </div>
+		<form action='image_up.php' method='POST' enctype='multipart/form-data'>
+			<input TYPE=hidden name=mode value=insert>
+			<table>
+				<tr> 
+					<td>올릴 이미지:</td>
+					<td><input type='file' name='image'></td>
+				</tr>
+				<tr> 
+					<td>제목</td>
+					<td><input type='text' name='title'></td>
+				</tr>
+				<tr> 
+					<td colspan = 2>
+						<input type='submit' value='이미지 전송 '>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
